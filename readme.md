@@ -1,5 +1,5 @@
 # Maklik Angular Admin 
-[![GitHub version](https://badge.fury.io/gh/thinusn%2Fmaklik-angular-admin.svg)](https://badge.fury.io/gh/thinusn%2Fmaklik-angular-admin) [![Dependency Status](https://david-dm.org/thinusn/maklikAngularAdmin.svg?style=flat-square)](https://david-dm.org/thinusn/maklik-angular-admin) 
+[![GitHub version](https://badge.fury.io/gh/thinusn%2Fmaklik-angular-admin.svg)](https://badge.fury.io/gh/thinusn%2Fmaklik-angular-admin) [![Dependency Status](https://david-dm.org/thinusn/maklik-angular-admin.svg)](https://david-dm.org/thinusn/maklik-angular-admin)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
 
 # What is this ?
