@@ -1,0 +1,39 @@
+<div id="page-wrapper" ng-class="{'open': sidebar.toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+    <sidebar></sidebar>
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+
+        <div class="page-content">
+            <!-- Header Bar -->
+            <header></header>
+            <!-- End Header Bar -->
+
+            <!-- Main content -->
+            <div class="app-content" ui-view>
+                <!-- Main Content -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <h2>Get started!</h2>
+                                <pre>{{headerbar}}</pre>
+                                <pre>{{sidebar}}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Content -->
+
+        </div>
+        <!-- End Page Content -->
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</div>
+<!-- End Page Wrapper -->
+

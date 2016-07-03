@@ -1,0 +1,16 @@
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar">
+        <li class="sidebar-main">
+            <a ng-click="sidebar.toggleSidebar()">
+                {{app.name}}
+                <span class="menu-icon fa fa-bars"></span>
+            </a>
+        </li>
+        <li class="sidebar-title"><span>{{app.navigation.header}}</span></li>
+        <li ng-repeat="item in sidebar.menu" ui-sref-active="active" class="sidebar-list">
+            <a href="" ui-sref="{{item.location}}">{{item.name}} <span class="menu-icon fa {{item.icon}}"></span></a>
+        </li>
+    </ul>
+    <footer></footer>
+</div>

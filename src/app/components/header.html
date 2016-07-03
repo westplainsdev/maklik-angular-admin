@@ -1,0 +1,54 @@
+<!-- Header Bar -->
+<div class="row header">
+    <div class="col-xs-12">
+        <div class="user pull-right">
+            <div class="item dropdown" uib-dropdown on-toggle="headerbar.toggleDropdown()">
+                <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                    <i class="fa fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">
+                        {{headerbar.items.name}}
+                    </li>
+                    <li class="divider"></li>
+                    <li ng-repeat="choice in headerbar.items.options">
+                        <a href>{{choice}}</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="item dropdown" uib-dropdown on-toggle="headerbar.toggleDropdown()">
+                <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                    <i class="fa fa-bell-o"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">
+                        Notifications
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">Server Down!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="meta">
+            <div class="title" ng-bind="($title)">
+            </div>
+            <div class="breadcrumb-links" ng-if="$breadcrumbs">
+                <ol class="breadcrumb">
+                    <li ng-repeat="crumb in $breadcrumbs" ng-class="{ 'active' : $last }">
+                        <a ng-if="!$last" href="{{$state.href(crumb.state, crumb.stateParams)}}">{{crumb.title}}</a>
+                        <span ng-if="$last">{{crumb.title}}</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Header Bar -->
